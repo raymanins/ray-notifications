@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+#notification-container {
+    position: fixed;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    border-radius: 0; /* Remove border radius for squared corners */
+    padding: 15px; /* Adjust padding as needed */
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    position: relative;
+    overflow: hidden;
+    background-color: #333; /* Default dark background */
+    background-size: cover;
+    width: 320px; /* Adjust width as needed */
+    height: auto;
+}
+
+.notification .icon i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.notification .content {
+    flex-grow: 1;
+}
+
+.notification .content .title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.notification .content .message {
+    margin: 0;
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.notification .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 6px; /* Increase height for better visibility */
+    background-color: rgba(255, 255, 255, 0.7); /* Increase opacity for better visibility */
+    width: 0;
+}
+
+.info {
+    background: linear-gradient(135deg, #17a2b8, #333);
+}
+
+.success {
+    background: linear-gradient(135deg, #28a745, #333);
+}
+
+.error {
+    background: linear-gradient(135deg, #dc3545, #333);
+}
+
+.warning {
+    background: linear-gradient(135deg, #ffc107, #333);
+}
+
+.info .progress-bar {
+    background-color: #41cde2;
+}
+
+.success .progress-bar {
+    background-color: #58ed78;
+}
+
+.error .progress-bar {
+    background-color: #e23345;
+}
+
+.warning .progress-bar {
+    background-color: #f1c643;
+}
