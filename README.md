@@ -1,4 +1,5 @@
 # RAY-NOTIFICATIONS SCRIPT 
+![image](https://github.com/raymanins/ray-notifications/assets/145383215/815a3737-a382-40d7-b329-99e4f1ce1953)
 
 
 # INSTALATION FOR QB
